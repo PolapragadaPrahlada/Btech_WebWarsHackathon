@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMR College</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <ul id="nav-list">
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="boards.html">Boards</a></li>
+                <li><a href="cultural.html">Cultural</a></li>
+                <li><a href="placements.html">Placements</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="https://maps.app.goo.gl/6uo74UwBhWgVbRmy6" target="_self">Map</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="support.html">Support</a></li>
+                <img  class="cross" src="./images/close-116-512.png" alt="cross">
+            </ul>
+            
+            <div class="nav-icons">
+                <img class="menuopen" src="./images/hamburger-menu-5.png" alt="menu">
+            </div>
+        </div>
+        <div class="offers">
+            <p>CMR College of Engineering & Technology established in 2002,Kandlakoya, Medhcal Road,Hyderabad, Telangana 501401.
+                </p>
+        </div>
+        <div class="back-video">
+            <video autoplay loop muted play-inline >
+                <source src="./Videos/CMR_Video.mp4"  type="video/mp4">  
+            </video>
+        </div>
+
+        <div class="section">
+            <div class="titles">
+                <h1> Announcements  </h1>
+            </div>
+            <div class="services">
+
+                 
+                 
+            </div>
+            
+            </div>
+            <div class="products">
+                <div class="product">
+                    <img src="./images/Pegasus.jpg" alt="product">
+                    <a href="#">Pegasus'24</a>
+                </div>
+                <div class="product">
+                    <img src="./images/WebWars.jpg" alt="product">
+                    <a href="#">WebWars'24</a>
+                </div>
+                <div class="product">
+                    <img src="./images/We are hiring.jpg" alt="product">
+                    <a href="#" >We Are Hiring</a>
+                </div>
+                <div class="product">
+                    <img src="./images/Nick.jpg" alt="product">
+                    <a href="#">Nick Vujicic Motivational Speech</a>
+                </div>
+                <div class="product">
+                    <img src="./images/Exams notification.jpg" alt="product">
+                    <a href="#">Semister Exam Timigs Changed</a>
+                </div>
+                <div class="product">
+                    <img src="./images/Esperanza.jpg" alt="product">
+                    <a href="#">Esperanza'24</a>
+                </div>
+                
+        </div>
+        <div class="card-container">
+            <h1>The latest. Start Registering To Take Part! </h1>
+            <div class="cards">
+                 <div class="card">
+                    <span>LIMITED TIME OFFER</span>
+                    <h1>Save on Early buy.</h1>
+                    <p>Price increases as time passes</p>
+                    <img src="./images/tickets.jpg" alt="tickets">
+                 </div>
+                 <div class="card">
+                    <span>Hurry UP!</span>
+                    <h1>First 40 Teams Selected </h1>
+                    <p>₹ 300/- Only</p>
+                    <img src="./images/WebWars.jpg" alt="tickets">
+                 </div>
+                 <div style="background: black;" class="card">
+                    <span style="color: white;" >Stall Auction for Pegasus</span>
+                    <h1 style="color: white;" >₹ 50, Register Now</h1>
+                    <p style="color: white;">Spot Bidding</p>
+                    <img style="height: 180px;" src="./images/auction.jpg" alt="auction">
+                 </div>
+            </div>
+        </div>
+        <div class="apple-events">
+            <h1>
+                Let's Explore Campus
+                 photos</h1>
+                <div class="event-pictures">
+                    <img src="./images/Library.jpg" alt="events">
+                    <img src="./images/Auditorium.jpg" alt="events">
+                </div>
+        </div>
+        <div class="section-3">
+            <img src="./images/Placements.jpg" alt="Placements">
+            <h1> Think Placements
+                Think CMR <br>
+                CMR Placement Drive
+                </h1>
+        </div>
+        <div class="menu-items">
+            <div class="store">
+                <img  src="./images/logo.png" alt="logo">
+                <p>CMR Quick Links</p>
+            </div>
+            <div class="menu-list">
+                <ul>
+                    <li><a href="newsletters.html">Newsletters</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="library.html"> Library</a></li>
+                    <li><a href="transport.html">Transport</a></li>
+                    <li><a href="hostel.html">Hostel</a></li>
+                    <li><a href="cafeteria.html">Cafeteria</a></li>
+                </ul>
+                <ul>
+                    <li><a href="nss.html">NSS</a></li>
+                    <li><a href="ncc.html">NCC</a></li>
+                    <li><a href="recognition_accreditation.html">Recognition and Accreditation</a></li>
+                    <li><a href="laboratories.html">Laboratories</a></li>
+                </ul>
+                
+                
+            </div>
+            <div class="footer">
+                <p>© 2024 CMR College of Engineering & Technology </p>
+            </div>
+        </div>
+    </div>
+    <script>
+      let nav_list = document.getElementById('nav-list')
+      let openMenu = document.querySelector('.menuopen')
+      let cross = document.querySelector('.cross')
+      openMenu.addEventListener('click',()=>{
+        nav_list.style.opacity = '100%'
+        openMenu.style.display ='none'
+      })
+      cross.addEventListener('click',()=>{
+        nav_list.style.opacity = '0%';
+        setTimeout(()=>{
+            openMenu.style.display ='block'
+        },400)
+      })
+
+    </script>
+</body>
+</html>
